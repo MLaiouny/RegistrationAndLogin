@@ -12,16 +12,19 @@ import {AlertService} from 'app/_services/alert.service';
 @NgModule({
   declarations: [
     AppComponent,
-    AlertComponent
+    AlertComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
 
   ],
   providers: [
-    AlertService
+    AlertService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
